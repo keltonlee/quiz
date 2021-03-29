@@ -1,8 +1,13 @@
 function change() {
-    var header = document.getElementById("He");
-    header.innerHTML = "CSIE@CGU";
-    var para = document.getElementById("Par");
-    para.innerHTML = "怎麼那麼棒！！.";
+    $(document).ready(function() {
+        $("button").click(function() {
+            $("#He").text("CSIE@CGU");
+        });
+
+        $("button").click(function() {
+            $("#Par").text("怎麼那麼棒！！.");
+        });
+    });
 }
 
 function myFunction() {
